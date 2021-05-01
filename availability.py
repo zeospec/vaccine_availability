@@ -66,7 +66,7 @@ def send_email(data_frame, age):
     receiver_email = os.environ['RECEIVER_EMAIL']
 
     message = MIMEMultipart("alternative")
-    message["Subject"] = "Vaccination Availability for Max Age, Count {}".format(len(data_frame.index))
+    message["Subject"] = "Vaccination Availability for Bangalore, Count {}".format(len(data_frame.index))
     message["From"] = sender_email
     message["To"] = receiver_email
 
@@ -77,6 +77,7 @@ def send_email(data_frame, age):
     html_header = """\
     <html>
       <body>
+      <p>Hi,<br>Please refer Vaccine availability</p>
         <p>
     """
 
