@@ -56,7 +56,7 @@ def get_availability(days: int, district_ids: List[int], max_age_criteria: int):
     return df[df.min_age_limit < max_age_criteria]
 
 
-def send_email(data_frame, age):
+def send_email(data_frame):
     # Used most of code from https://realpython.com/python-send-email/ and modified
     if data_frame is None or len(data_frame.index) == 0:
         print("Empty Data")
@@ -109,9 +109,9 @@ if __name__ == "__main__":
     Bangalore_Urban = 265
     BBMP = 294
     dist_ids = [Bangalore_Rural, Bangalore_Urban, BBMP]
-    next_n_days = 5
+    next_n_days = 7
     max_age_criteria = 50
 
     availability_data = get_availability(next_n_days, dist_ids, max_age_criteria)
     print(availability_data)
-    send_email(availability_data, max_age_criteria)
+    send_email(availability_data)
