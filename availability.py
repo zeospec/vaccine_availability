@@ -77,7 +77,7 @@ def send_email(data_frame, age):
     html_header = """\
     <html>
       <body>
-      <p>Hi,<br>Please refer Vaccine availability for next 7 days:</p>
+      <p>Hi,<br>Please refer Vaccine availability:</p>
         <p>
     """
 
@@ -109,7 +109,7 @@ if __name__ == "__main__":
     Bangalore_Urban = 265
     BBMP = 294
     dist_ids = [Bangalore_Rural, Bangalore_Urban, BBMP]
-    next_n_days = 7
+    next_n_days = 5
     max_age_criteria = 50
 
     availability_data = get_availability(next_n_days, dist_ids, max_age_criteria)
