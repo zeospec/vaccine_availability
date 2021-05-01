@@ -105,10 +105,10 @@ def send_email(data_frame, age):
 
 
 if __name__ == "__main__":
-    Bangalore Rural = 276
-    Bangalore Urban = 265
+    Bangalore_Rural = 276
+    Bangalore_Urban = 265
     BBMP = 294
-    dist_ids = [Bangalore Rural, Bangalore Urban, BBMP]
+    dist_ids = [Bangalore_Rural, Bangalore_Urban, BBMP]
     next_n_days = 5
     max_age_criteria = 50
 
