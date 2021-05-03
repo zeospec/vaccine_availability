@@ -3,10 +3,10 @@
 
 name: cron
 
-# on: workflow_dispatch
-on:
-  schedule:
-    - cron: '0 0,2,4,6,8,10,12,14,16,18,20,22 * * *' # Every 1 hours
+on: workflow_dispatch
+# on:
+#   schedule:
+#     - cron: '0 0,2,4,6,8,10,12,14,16,18,20,22 * * *' # Every 1 hours
     # - cron: '0 0,6,12,18 * * *' # Every 6 hours
     # - cron: '* * * * *' # Every ~5 min
 
